@@ -29,7 +29,7 @@ Follow these 3 simple steps to use this project:
 - **InitiAllSettings:** Loads configuration data from the [Config.xlsx](Data/Config.xlsx) file and from assets.
 - **GetAppCredential:** Retrieves credentials from Orchestrator assets or local Windows Credential Manager.
 - **InitiAllApplications:** Opens and logs in to applications used throughout the process.
-  - This workflow invokes [AcmeLogin](Framework/Custom/AcmeLogin.xamlAcmeLogin.xaml) to log in if not already logged in. 
+  - This workflow invokes [AcmeLogin.xaml](Framework/Custom/AcmeLogin.xaml) to log in if not already logged in. 
   - It also invokes [FetchWorkItem.xaml](Framework/Custom/FetchWorkItems.xaml) to fetch Work-Items and push it into Orchestrator Queue.
 
 ### 2. Get Transaction Data
