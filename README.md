@@ -1,4 +1,4 @@
-# ACME Work Item Automation using RE Framework
+# ACME Work-Items Automation using RE Framework
 
 This project is designed to automate the processing of work items in the ACME system using the UiPath Robotic Enterprise Framework. It streamlines the tasks of logging in, fetching work items, processing them, and updating their status, all while utilizing UiPath Orchestrator's queue and folder management.
 
