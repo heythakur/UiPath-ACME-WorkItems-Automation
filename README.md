@@ -26,11 +26,11 @@ Follow these 3 simple steps to use this project:
 
 ### 1. Initialize Process
 
-- **InitiAllSettings:** Loads configuration data from the `Config.xlsx` file and from assets.
+- **InitiAllSettings:** Loads configuration data from the [Config.xlsx](Data/Config.xlsx) file and from assets.
 - **GetAppCredential:** Retrieves credentials from Orchestrator assets or local Windows Credential Manager.
 - **InitiAllApplications:** Opens and logs in to applications used throughout the process.
-  - This workflow invokes [AcmeLogin](Framework\Custom\AcmeLogin.xaml) to log in if not already logged in. 
-  - It also invokes [FetchWorkItem.xaml](Framework\Custom\FetchWorkItem.xaml) to fetch Work-Items and push it into Orchestrator Queue.
+  - This workflow invokes [AcmeLogin](Framework/Custom/AcmeLogin.xamlAcmeLogin.xaml) to log in if not already logged in. 
+  - It also invokes [FetchWorkItem.xaml](Framework/Custom/FetchWorkItems.xaml) to fetch Work-Items and push it into Orchestrator Queue.
 
 ### 2. Get Transaction Data
 
@@ -39,7 +39,7 @@ Follow these 3 simple steps to use this project:
 ### 3. Process Transaction
 
 - **Process:** Processes the transaction and invokes other workflows related to the specific automation process.
-    - This workflow processes the transaction and invokes [ProcessQueueItem.xaml](Framework\Custom\ProcessQueueItem.xaml) to process the each Transactions of Queue.
+    - This workflow processes the transaction and invokes [ProcessQueueItem.xaml](Framework/Custom/ProcessQueueTransactions.xaml) to process the each Transactions of Queue.
 
 - **SetTransactionStatus:** Updates the status of the processed transaction (Orchestrator transactions by default): Success, Business Rule Exception, or System Exception.
 
@@ -52,7 +52,7 @@ Follow these 3 simple steps to use this project:
 
 ## Documentation
 
-Additional documentation and instructions can be found in the `Documentation` folder of this project.
+Additional documentation and instructions can be found in the [Documentation](Documentation) folder of this project.
 
 
 
