@@ -16,8 +16,8 @@ Before you begin, make sure you have the following:
 
 Follow these 3 simple steps to use this project:
 
-1. Make a folder named "ACME" in UiPath Orchestrator within your account.
-2. Create a queue named "workItem" in the "ACME" folder in Orchestrator.
+1. Make a folder named `ACME` in UiPath Orchestrator within your account.
+2. Create a queue named `workItem` in the `ACME` folder in Orchestrator.
 3. Open the [Main.xaml](Main.xaml) file of this project, 'RE_for_ACME', in UiPath Studio using the same account in which the queue and folder were created. Then, run the project.
 
 
